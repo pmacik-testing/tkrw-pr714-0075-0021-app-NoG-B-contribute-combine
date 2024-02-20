@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gra6
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0021-tenant/tkrw-pr714-0075-0021-app/devfile-sample-gra6@sha256:44d86ef92373f7b51bb433c3f252c1ad282306a04c1bb120c335c25507eff06e
+        name: my-nodejs
+        resources: {}
+status: {}
